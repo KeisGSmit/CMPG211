@@ -5,8 +5,7 @@ public class DoSomethingElseB {
         int count = 0;
         double fp1, fp2, fp3, sum;
         for (i1 = 1; i1 <= 50; i1++)
-            for (i2 = 1;
-                (i1 + i2) <= 50; i2++) {
+            for (i2 = 1;(i1 + i2) <= 50; i2++) {
                 count++;
                 i3 = 50 - (i1 + i2);
                 fp1 = i1 / 10.0;

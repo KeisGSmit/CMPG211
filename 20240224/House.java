@@ -1,5 +1,5 @@
 public class House {
-    int height;
+    private int height; // Encapsulation 
 
     House(int height){
         this.height = height;
