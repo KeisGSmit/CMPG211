@@ -1,14 +1,14 @@
-public class TrySomething { 
-    public static void main(String[] args) { 
-        double d1 = 0; 
-        double d2 = 123; 
-        double d3; 
-        double d4; 
-        d3 = d1 / d1; 
-        // 0.0 / 0.0 = NaN
-        System.out.println(d1 + " / "+ d1 + " = "+d3); 
-        d4 = d2 / d1;
-        // 123.0 / 0.0 = Infinity 
-        System.out.println(d2 + " / "+ d1 + " = "+d4); 
-    } 
+public class TrySomething {
+
+    static int myVal = 20; 
+    public int myDifferentVal = 15;
+    
+    public static void main(String[] args){
+        // myVal is static to the class
+        System.out.println(TrySomething.myVal);
+
+        TrySomething t = new TrySomething();
+        // myDifferentVal is not static and needs to be intialised
+        System.out.println(t.myDifferentVal);
+    }
 }
