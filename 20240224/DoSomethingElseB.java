@@ -12,6 +12,7 @@ public class DoSomethingElseB {
                 fp2 = i2 / 10.0;
                 fp3 = i3 / 10.0;
                 sum = fp1 + fp2 + fp3;
+                sum = Math.round(sum);
                 if ((5 - sum) != 0.0) {
                     System.out.println("i1=" + i1 + ", i2=" + i2 + ", i3=" + i3 + ", fp1=" + fp1 + ", fp2=" + fp2 + ", fp3=" + fp3 + ", sum=" + sum);
                     error++;
@@ -82,3 +83,6 @@ i1=46, i2=3, i3=1, fp1=4.6, fp2=0.3, fp3=0.1, sum=4.999999999999999
 i1=48, i2=1, i3=1, fp1=4.8, fp2=0.1, fp3=0.1, sum=4.999999999999999
 There were 56 errors in 1225 calculations!
  */
+
+ // This is because double stores twice as many bites in memory
+ // to fix: Math.round()
