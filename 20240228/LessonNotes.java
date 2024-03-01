@@ -4,16 +4,16 @@ public class LessonNotes {
         boolean B = false;
 
         if(A && B){
-            System.err.println("True");
+            System.err.println("True- A && B");
         }
         if(!A && B){
-            System.err.println("True");
+            System.err.println("True- !A && B");
         }
         if(A && !B){
-            System.err.println("True");
+            System.err.println("True - A && !B");
         }
         if(!A && !B){
-            System.err.println("True");
+            System.err.println("True - !A && !B");
         }
 
     }
