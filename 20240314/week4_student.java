@@ -2,19 +2,20 @@ public class week4_student extends week4_person{
 
     // Replica of student class with corrections
 
-    private String id;
-    private String name;
     private String status;
-    private String email;
    
     public week4_student(){
         this("33056897", "Keis Smit", "33056897@mynwu.ac.za"); //Uses this to call other constructor with params
     }
 
     public week4_student(String id, String name, String email){
-        this.setId(id);
-        this.setName(name);
-        this.setEmail(email);
+        /* 
+        same as *this* key work
+            call as function
+            invoke contructor of the super class
+            super.setId(id) == this.setId(id) but "points" to super class
+        */
+        super(id, name, email); 
         this.setStatus("Temporary lecturer");
     }
 
