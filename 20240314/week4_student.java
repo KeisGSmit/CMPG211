@@ -1,4 +1,4 @@
-public class week4_student {
+public class week4_student extends week4_person{
 
     // Replica of student class with corrections
 
@@ -12,43 +12,24 @@ public class week4_student {
     }
 
     public week4_student(String id, String name, String email){
-        setId(id);
-        setName(name);
-        setEmail(email);
+        this.setId(id);
+        this.setName(name);
+        this.setEmail(email);
+        this.setStatus("Temporary lecturer");
     }
 
-    public void setId(String id){
-        this.id = id;
-    }
-
-    public void setName(String name){
-        this.name = name;
-    }
-
+    // mutators
     public void setStatus(String status){
         this.status = status;
     }
 
-    public void setEmail(String email){
-        this.email = email;
-    }
 
-    public String getId(){
-        return this.id;
-    }
-
-    public String getName(){
-        return this.name;
-    }
-
+    // accessors
     public String getStatus(){
         return this.status;
     }
 
-    public String getEmail(){
-        return this.email;
-    }
-
+    // toString method
     public String toString(){
         return "Name: " + getName() + "\nid: " + getId() + "\nemail: " + getEmail(); // Use toString to test getMethods
     }
