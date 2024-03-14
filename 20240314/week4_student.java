@@ -1,18 +1,17 @@
-public class week4 {
+public class week4_student {
+
+    // Replica of student class with corrections
 
     private String id;
     private String name;
     private String status;
     private String email;
    
-    public week4(){
-        setId("33056897");
-        setEmail("33056897@mynwu.ac.za");
-        setName("Keis Smit");
-        setStatus("Active");
+    public week4_student(){
+        this("33056897", "Keis Smit", "33056897@mynwu.ac.za"); //Uses this to call other constructor with params
     }
 
-    public week4(String id, String name, String email){
+    public week4_student(String id, String name, String email){
         setId(id);
         setName(name);
         setEmail(email);
@@ -51,7 +50,7 @@ public class week4 {
     }
 
     public String toString(){
-        return "Too much data to output. please call getter methods individually";
+        return "Name: " + getName() + "\nid: " + getId() + "\nemail: " + getEmail(); // Use toString to test getMethods
     }
 
 }
