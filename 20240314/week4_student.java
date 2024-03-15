@@ -3,9 +3,13 @@ public class week4_student extends week4_person{
     // Replica of student class with corrections
 
     private String status;
-   
+   // constructors
     public week4_student(){
-        this("33056897", "Keis Smit", "33056897@mynwu.ac.za"); //Uses this to call other constructor with params
+        this(
+            "33056897", 
+            "Keis Smit", 
+            "33056897@mynwu.ac.za"
+            ); //Uses this to call other constructor with params
     }
 
     public week4_student(String id, String name, String email){
@@ -32,7 +36,10 @@ public class week4_student extends week4_person{
 
     // toString method
     public String toString(){
-        return "Name: " + getName() + "\nid: " + getId() + "\nemail: " + getEmail(); // Use toString to test getMethods
+        return "Name: " + getName() + 
+        "\nid: " + getId() +
+        "\nemail: " + getEmail() +
+        "\nstatus: " + getStatus(); // Use toString to test getMethods
     }
 
 }

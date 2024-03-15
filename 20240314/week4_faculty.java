@@ -3,66 +3,52 @@
  * Student Number: 33056897
  */
 
- public class week4_faculty{
-    private String id;
-    private String name;
+ public class week4_faculty extends week4_person{
     private String rank;
     private String office;
-    private String email;
 
+    //constructors
     public week4_faculty(){
-        this("020508", "Head of NatSci", "NATSCI@mynwu.ac.za", "Head"); //Uses this to call other constructor with params
+        this(
+            "020508", 
+            "Head of NatSci", 
+            "NATSCI@mynwu.ac.za", 
+            "Head"
+            ); //Uses this to call other constructor with params
     }
 
-    public week4_faculty(String id, String name, String email, String rank){
-        setId(id);
-        setName(name);
-        setEmail(email);
+    public week4_faculty(
+        String id, String name, String email, String rank
+        ){
+        super(id, name, email);
         setRank(rank);
     }
 
-    public void setId(String id){
-        this.id = id;
-    }
-
-    public void setName(String name){
-        this.name = name;
-    }
-
+    // Mutators
     public void setRank(String rank){
         this.rank = rank;
-    }
-
-    public void setEmail(String email){
-        this.email = email;
     }
     
     public void setOffice(String office){
         this.office = office;
     }
 
-    public String getId(){
-        return this.id;
-    }
-
-    public String getName(){
-        return this.name;
-    }
-
+    // Accessors
     public String getRank(){
         return this.rank;
-    }
-
-    public String getEmail(){
-        return this.email;
     }
 
     public String getOffice(){
         return this.office;
     }
 
+    // toString Methods
     public String toString(){
-        return "id: " + getId() + "\nname: " + getName() + "\nemail" + getEmail() + "\nrank: " + getRank(); // Use toString to test getMethods
+        return "id: " + getId() +
+        "\nname: " + getName() + 
+        "\nemail" + getEmail() + 
+        "\nrank: " + getRank() +
+        "\noffice: " + getOffice(); // Use toString to test getMethods
     }
 
 }
