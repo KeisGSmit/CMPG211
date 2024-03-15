@@ -50,6 +50,11 @@ public class week4_testPerson {
         System.out.println(f2);
         System.out.println(st2);
 
+    // Testing Employeee constructors and methods:
+        
+        week4_employees e1 = new week4_employees("Employee", "Employee22345", "employee@email.com", "employee office");
+        System.out.println(e1);
+
     } 
     
 }
