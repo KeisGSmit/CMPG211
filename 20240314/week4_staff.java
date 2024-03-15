@@ -39,11 +39,12 @@
     }
 
     public String toString(){
-        return "id: " + getId() + 
-        "\nname: " + getName() + 
-        "\nemail: " + getEmail() + 
-        "\nTitle: " + getTitle() +
-        "\nOffice: " + getOffice(); // Use toString to test getMethods
+        return "Staff: \n" +
+        "\tid: " + getId() + 
+        "\n\tname: " + getName() + 
+        "\n\temail: " + getEmail() + 
+        "\n\tTitle: " + getTitle() +
+        "\n\tOffice: " + getOffice(); // Use toString to test getMethods
     }
 
 }

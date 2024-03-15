@@ -44,11 +44,12 @@
 
     // toString Methods
     public String toString(){
-        return "id: " + getId() +
-        "\nname: " + getName() + 
-        "\nemail" + getEmail() + 
-        "\nrank: " + getRank() +
-        "\noffice: " + getOffice(); // Use toString to test getMethods
+        return "Faculty: \n" +
+        "\tid: " + getId() +
+        "\n\tname: " + getName() + 
+        "\n\temail" + getEmail() + 
+        "\n\trank: " + getRank() +
+        "\n\toffice: " + getOffice(); // Use toString to test getMethods
     }
 
 }

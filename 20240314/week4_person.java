@@ -46,10 +46,10 @@ public class week4_person {
     }
 
     public String toString(){
-        return 
-        "id: " + getId() + "\n" +
-        "name: " + getName() + "\n" +
-        "email: " + getEmail();
+        return "Person: \n"+
+        "\tid: " + getId() + "\n" +
+        "\tname: " + getName() + "\n" +
+        "\temail: " + getEmail();
     }
 
 }

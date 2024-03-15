@@ -36,10 +36,11 @@ public class week4_student extends week4_person{
 
     // toString method
     public String toString(){
-        return "Name: " + getName() + 
-        "\nid: " + getId() +
-        "\nemail: " + getEmail() +
-        "\nstatus: " + getStatus(); // Use toString to test getMethods
+        return "Student: \n"+
+        "\tName: " + getName() + 
+        "\n\tid: " + getId() +
+        "\n\temail: " + getEmail() +
+        "\n\tstatus: " + getStatus(); // Use toString to test getMethods
     }
 
 }
