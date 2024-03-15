@@ -17,7 +17,7 @@ public class week4_testStaff {
         
         // Creating a custom Staff member
 
-        week4_staff customStaff = new week4_staff("4128579", "Pieter Slabbert", "Email@email.co.za", "Your flatness");
+        week4_staff customStaff = new week4_staff("4128579", "Pieter Slabbert", "Email@email.co.za", "Your flatness", "Apple-Room");
         
         System.out.println("custom staff member details");
         System.out.println(customStaff.getEmail());

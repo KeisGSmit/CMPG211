@@ -17,7 +17,7 @@ public class week4_testFaculty {
 
         // Creating a custom faculty
 
-        week4_faculty customFaculty = new week4_faculty("225896663", "Engineering", "Depression@myMentalHealth.co.za", "Last");
+        week4_faculty customFaculty = new week4_faculty("225896663", "Engineering", "Depression@myMentalHealth.co.za", "Last", "banana-Room");
 
         System.out.println(customFaculty.getId());
         System.out.println(customFaculty.getName());
