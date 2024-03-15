@@ -3,24 +3,23 @@
  * Student Number: 33056897
  */
 
- public class week4_faculty extends week4_person{
+ public class week4_faculty extends week4_employees{
     private String rank;
-    private String office;
-
     //constructors
     public week4_faculty(){
         this(
             "020508", 
             "Head of NatSci", 
             "NATSCI@mynwu.ac.za", 
-            "Head"
+            "Head",
+            "office"
             ); //Uses this to call other constructor with params
     }
 
     public week4_faculty(
-        String id, String name, String email, String rank
+        String id, String name, String email, String rank, String Office
         ){
-        super(id, name, email);
+        super(id, name, email, Office);
         setRank(rank);
     }
 
@@ -28,18 +27,11 @@
     public void setRank(String rank){
         this.rank = rank;
     }
-    
-    public void setOffice(String office){
-        this.office = office;
-    }
+
 
     // Accessors
     public String getRank(){
         return this.rank;
-    }
-
-    public String getOffice(){
-        return this.office;
     }
 
     // toString Methods

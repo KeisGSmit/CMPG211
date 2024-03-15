@@ -21,7 +21,8 @@ public class week4_testPerson {
         "35684745", 
         "Siema", 
         "siema@faculty.com",
-         "Admin");
+         "Admin",
+         "Temp-office");
 
         System.out.println(f1);
 
@@ -31,7 +32,8 @@ public class week4_testPerson {
             "345844725", 
             "john", 
             "john@staff.com", 
-            "Prof");
+            "Prof",
+            "Temp-office");
         
         System.out.println(st1);
     
