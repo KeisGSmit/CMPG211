@@ -3,10 +3,9 @@ public class week5_square extends week5_shape{
         super(dimension);
     }
 
-    // @Override
-    // public String toString(){
-    //     return super.toString();
-    // }
+    public float getArea(){
+        return this.getDimention() * this.getDimention();
+    }
 
     public static void main(String[] args){
 

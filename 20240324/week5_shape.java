@@ -21,7 +21,7 @@ public class week5_shape {
         // Why does this work?  -> 
         // 1) super class object
         // 1.1) evething inherits from object
-        return super.toString();
+        return "The dimmension of the shape is: " + getDimention();
     }
 
 }
