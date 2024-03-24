@@ -37,7 +37,7 @@ public class week5_square extends week5_shape{
         // }
         
         week5_circle c2 = new week5_circle();
-        // System.out.println(c2.getDoubleArea());
+        System.out.println(c2.getDoubleArea());
         System.out.println(c2.getArea());
     }
 }
