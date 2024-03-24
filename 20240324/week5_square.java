@@ -35,5 +35,8 @@ public class week5_square extends week5_shape{
             System.out.println(shapes[i].getPermimeter());
 
         }
+        
+        week5_circle c2 = new week5_circle();
+        System.out.println(c2.getDoubleArea());
     }
 }
