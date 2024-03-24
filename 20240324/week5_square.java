@@ -3,6 +3,14 @@ public class week5_square extends week5_shape{
         super(dimension);
     }
 
+    public week5_square(){
+        super();
+    }
+
+    public String getMessage(){
+        return "Hello";
+    }
+
     // You need to implement a method for the abstract method IF class esxtends from abstract class
     @Override // This is needed
     public float getArea(){
@@ -16,23 +24,21 @@ public class week5_square extends week5_shape{
 
     public static void main(String[] args){
 
-        // // Use of inheritance
-        // week5_square S1 = new week5_square(20);
-        // System.out.println(S1.getPermimeter());
+        week5_shape[] shapes = new week5_shape[20];
 
-        // week5_circle circ1 = new week5_circle(20);
-        // System.out.println(circ1.getPermimeter());
+        // populate with different objects that extend from super class
+        for(int i = 0; i < 10 ; i ++){
+            shapes[i] = new week5_square();
+        }
+        for(int i = 10; i < 20 ; i ++){
+            shapes[i] = new week5_circle();
+        }
 
-        // Wild idea -> polymorphism -> reads square as a shape not as a square
-        week5_shape shape1 = new week5_square(10);
-        System.out.println(shape1);
+        // can call superclass methods
+        for(int i = 0 ; i < 20; i++){
+            System.out.println(shapes[i].getPermimeter());
+            System.out.println(shapes[i].getMessage()); // parent class needs this method, eventhough child class has this message
 
-        // ^ This is useful when it comes to arrays
-
-        week5_shape[] arrShapes = {new week5_square(10), new week5_circle(20)};
-
-        for(int i= 0; i < arrShapes.length ; i ++ ){
-            System.err.println(arrShapes[i]);
         }
     }
 }
