@@ -1,4 +1,6 @@
-public class week5_shape {
+// Must make class abstract
+// Can not create instance but can inherit functionality
+public abstract class week5_shape {
     private float dimension;
 
     public week5_shape(){
@@ -16,6 +18,10 @@ public class week5_shape {
     public void setDimension(float dimension) {
         this.dimension = dimension;
     }
+
+    // abstract = "I will not be providing a body for this method"
+    // You will not be able to create an instance of this class
+    public abstract float getArea();
 
     public String toString(){
         // Why does this work?  -> 

@@ -4,6 +4,7 @@ public class week5_circle extends week5_shape{
         super(dimension);
     }
 
+    @Override
     public float getArea(){
         return this.getDimention() * this.getDimention() * (float)Math.PI;
     }
