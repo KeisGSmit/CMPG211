@@ -7,10 +7,6 @@ public class week5_square extends week5_shape{
         super();
     }
 
-    public String getMessage(){
-        return "Hello";
-    }
-
     // You need to implement a method for the abstract method IF class esxtends from abstract class
     @Override // This is needed
     public float getArea(){
@@ -37,7 +33,6 @@ public class week5_square extends week5_shape{
         // can call superclass methods
         for(int i = 0 ; i < 20; i++){
             System.out.println(shapes[i].getPermimeter());
-            System.out.println(shapes[i].getMessage()); // parent class needs this method, eventhough child class has this message
 
         }
     }

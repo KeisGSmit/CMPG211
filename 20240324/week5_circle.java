@@ -8,9 +8,6 @@ public class week5_circle extends week5_shape{
         super();
     }
 
-    public String getMessage(){
-        return "Hello";
-    }
 
     @Override
     public float getArea(){
