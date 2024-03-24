@@ -22,13 +22,9 @@ public abstract class week5_shape {
     // abstract = "I will not be providing a body for this method"
     // You will not be able to create an instance of this class
     // 
-    public abstract float getArea();
+    // public abstract float getArea();
 
-    public float getDoubleArea(){
-        return this.getArea() * 2;
-    }
-
-    public abstract float getPermimeter();
+    // public abstract float getPermimeter();
 
     public String toString(){
         // Why does this work?  -> 

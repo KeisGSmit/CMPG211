@@ -1,4 +1,7 @@
-public class week5_circle extends week5_shape{
+// Use implements to extend interfaces
+// many interfaces to one class unlike parent class
+
+public class week5_circle extends week5_shape implements week5_derivatives{
     
     public week5_circle(float dimension){
         super(dimension);
@@ -8,6 +11,8 @@ public class week5_circle extends week5_shape{
         super();
     }
 
+
+    // without extending interfaces this @Override would give an error
 
     @Override
     public float getArea(){
@@ -19,8 +24,5 @@ public class week5_circle extends week5_shape{
         return 2 * (float)Math.PI * getDimention();
     }
 
-    @Override
-    public String toString(){
-        return super.toString();
-    }
+
 }
