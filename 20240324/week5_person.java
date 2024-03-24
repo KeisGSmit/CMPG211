@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class week5_person{
+public class week5_person implements Comparable<week5_person>{
     private String name;
     private int age;
 
@@ -36,6 +36,11 @@ public class week5_person{
                 " age=" + age +
                 '}';
     }
+    
+    @Override
+    public int compareTo(week5_person person){
+        return Integer.compare(this.age, person.age);
+    }
 
     public static void main(String[] args){
 
@@ -47,9 +52,9 @@ public class week5_person{
         persons[3] = new week5_person("Jane", 30);
         persons[4] = new week5_person("Smith", 40);
         
-        for(week5_person person: persons){
-            System.err.println(person.getAgeString());
-        }
+        // for(week5_person person: persons){
+        //     System.err.println(person.getAgeString());
+        // }
 
         Arrays.sort(persons);
 
