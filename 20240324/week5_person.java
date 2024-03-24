@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class week5_person{
     private String name;
     private int age;
@@ -36,12 +38,20 @@ public class week5_person{
     }
 
     public static void main(String[] args){
+
         week5_person[] persons = new week5_person[5];
+
         persons[0] = new week5_person("Doe", 35);
         persons[1] = new week5_person("John", 25);
         persons[2] = new week5_person("Doe", 45);
         persons[3] = new week5_person("Jane", 30);
         persons[4] = new week5_person("Smith", 40);
+        
+        for(week5_person person: persons){
+            System.err.println(person.getAgeString());
+        }
+
+        Arrays.sort(persons);
 
         for(week5_person person: persons){
             System.err.println(person.getAgeString());
