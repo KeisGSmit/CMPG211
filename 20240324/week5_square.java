@@ -3,16 +3,16 @@ public class week5_square extends week5_shape{
         super(dimension);
     }
 
-    @Override
-    public String toString(){
-        return super.toString();
-    }
+    // @Override
+    // public String toString(){
+    //     return super.toString();
+    // }
 
     public static void main(String[] args){
 
         // Use of inheritance
         week5_square S1 = new week5_square(20);
-        System.out.println(S1.getDimention());
+        System.out.println(S1);
 
         // Create instance of superclass
         week5_shape shape1 = new week5_shape();
