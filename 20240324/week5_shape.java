@@ -23,6 +23,8 @@ public abstract class week5_shape {
     // You will not be able to create an instance of this class
     public abstract float getArea();
 
+    public abstract float getPermimeter();
+
     public String toString(){
         // Why does this work?  -> 
         // 1) super class object

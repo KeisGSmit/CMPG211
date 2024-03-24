@@ -10,6 +10,11 @@ public class week5_circle extends week5_shape{
     }
 
     @Override
+    public float getPermimeter(){
+        return 2 * (float)Math.PI * getDimention();
+    }
+
+    @Override
     public String toString(){
         return super.toString();
     }

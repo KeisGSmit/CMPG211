@@ -9,13 +9,18 @@ public class week5_square extends week5_shape{
         return this.getDimention() * this.getDimention();
     }
 
+    @Override
+    public float getPermimeter(){
+        return (float)4* getDimention();
+    }
+
     public static void main(String[] args){
 
         // Use of inheritance
         week5_square S1 = new week5_square(20);
-        System.out.println(S1.getArea());
+        System.out.println(S1.getPermimeter());
 
         week5_circle circ1 = new week5_circle(20);
-        System.out.println(circ1.getArea());
+        System.out.println(circ1.getPermimeter());
     }
 }
