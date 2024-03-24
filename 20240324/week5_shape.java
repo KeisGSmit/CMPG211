@@ -18,6 +18,7 @@ public class week5_shape {
     }
 
     public String toString(){
+        // Why does this work?  -> 
         return super.toString();
     }
 
