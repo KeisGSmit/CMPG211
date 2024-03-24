@@ -1,6 +1,6 @@
 // Must make class abstract
 // Can not create instance but can inherit functionality
-public abstract class week5_shape {
+public abstract class week5_shape implements week5_derivatives{
     private float dimension;
 
     public week5_shape(){

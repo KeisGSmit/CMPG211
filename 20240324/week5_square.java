@@ -1,4 +1,4 @@
-public class week5_square extends week5_shape implements week5_derivatives{
+public class week5_square extends week5_shape{
     week5_square(float dimension){
         super(dimension);
     }
