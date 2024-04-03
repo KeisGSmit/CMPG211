@@ -38,9 +38,15 @@ public class Exceptions {
 
             scanner.close();
             
-        } catch (ArithmeticException e) {
+        }
+        catch (ArithmeticException e) {
             System.err.println("go back to Grade 1: " + e);
-        }finally{
+        }
+        catch(NumberFormatException e){
+            System.err.println("There was an error: " + e);
+        }
+        finally{
+            System.err.println("Code completed");
         }
     }
 }
