@@ -1,4 +1,4 @@
-public class InvalidMethodException extends Exception {
+public class InvalidMethodException extends RuntimeException {
     InvalidMethodException() {
         this("Not a valid HTTP method.");
     }

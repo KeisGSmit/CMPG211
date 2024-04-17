@@ -55,7 +55,7 @@ public class HttpRequest implements Comparable<HttpRequest> {
                     new HttpRequest("GET"),
             };
 
-            Arrays.sort(httpRequests, Comparator.reverseOrder());
+            Arrays.sort(httpRequests, Comparator.reverseOrder()); //Remeber this moethod
 
             for (HttpRequest request : httpRequests) {
                 System.out.println(request);
