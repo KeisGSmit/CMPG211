@@ -1,21 +1,33 @@
 import java.util.Scanner;
 
 public class Exceptions {
-    
+
+    public void setNumberOfStudents(int num) throws InvalidSizeException {
+        if(num <= 0 || num > 50){
+            throw new InvalidSizeException();
+        }
+    }
     public static void main(String[] args){
         Scanner scanner;
         try{
             scanner = new Scanner(System.in);
 
-            System.out.println("Enter a integer: ");
-            int num = Integer.parseInt(scanner.nextLine());
+            Exceptions e1 = new Exceptions();
+
+            e1.setNumberOfStudents(scanner.nextInt());
+
+            // System.out.println("Enter a integer: ");
+            // int num = Integer.parseInt(scanner.nextLine());
 
 
-            System.err.println("The number you entered: " + num);
+            // System.err.println("The number you entered: " + num);
         
             scanner.close();
-            // Trickle down Exceptioncatching
-        }catch(NumberFormatException e){
+            // // Trickle down Exceptioncatching
+        }catch(InvalidSizeException e){
+            System.err.println("There was a InvalidSizeException: " + e);
+        }
+        catch(NumberFormatException e){
             System.err.println("There was an error: " + e);
         }catch(Exception ex){
             System.err.println("There was an error: " + ex);
